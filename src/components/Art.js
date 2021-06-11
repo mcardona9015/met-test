@@ -1,16 +1,15 @@
 function Art({ art }) {
-  // const [img]
   console.log(art);
-  //   fetch(
-  //     `https://collectionapi.metmuseum.org/public/collection/v1/objects/${art}`
-  //   )
-  //     .then((res) => res.json())
-  //     .then(console.log);
-
   return (
     <div>
-      <img src={art.primaryImageSmall} alt="random artwork"></img>
-      <p>{art.artistDisplayName}</p>
+      <img src={art[0].primaryImageSmall} alt="art file" />
+      <p>{art[0].artistDisplayName}</p>
+      <img src={art[1].primaryImageSmall} alt="art file" />
+      <p>{art[1].artistDisplayName}</p>
+      <img src={art[2].primaryImageSmall} alt="art file" />
+      <p>{art[2].artistDisplayName}</p>
+      <img src={art[3].primaryImageSmall} alt="art file" />
+      <p>{art[3].artistDisplayName}</p>
     </div>
   );
 }
